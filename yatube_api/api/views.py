@@ -3,8 +3,8 @@ from rest_framework import filters, mixins, viewsets
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
-from api.permissions import IsAuthorOrReadOnly
 from api import serializers
+from api.permissions import IsAuthorOrReadOnly
 from posts.models import Group, Post, User
 
 
